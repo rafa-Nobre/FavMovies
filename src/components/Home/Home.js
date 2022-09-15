@@ -9,11 +9,12 @@ import {
 
 const Home = () => {
   const dispatch = useDispatch()
-  //const [movieData, setMovieData] = useState([])
+
   useEffect(() => {
     dispatch(fetchAsyncMovies())
     dispatch(fetchAsyncShows())
   }, [dispatch])
+
   return (
     <div>
       <div className="banner-img"></div>

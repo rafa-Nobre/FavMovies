@@ -10,6 +10,7 @@ import './App.scss'
 function App() {
   return (
     <div className="app">
+      {/* Usando o React Router para fazer os componentes "conversarem" entre si como um todo */}
       <Router>
         <Header></Header>
         <div className="container">

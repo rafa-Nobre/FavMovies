@@ -9,7 +9,6 @@ const MovieListing = () => {
   const shows = useSelector(getAllShows)
   let renderMovies,
     renderShows = ''
-  //return movieData.map(<div></div>)
   renderMovies =
     movies.Response === 'True' ? (
       movies.Search.map((movie, index) => (

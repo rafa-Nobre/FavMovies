@@ -6,6 +6,7 @@ import { store } from './features/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
+  //Rodando a aplicação com base na loja criada(Redux)
   <React.StrictMode>
     <Provider store={store}>
       <App />

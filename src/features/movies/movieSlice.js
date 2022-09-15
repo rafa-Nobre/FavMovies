@@ -1,11 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import movieApi from '../../common/apis/movieApi'
-import { APIKey } from '../../common/apis/MovieApiKey'
+import movieApi from '../../apis/movieApi'
+import { APIKey } from '../../apis/MovieApiKey'
 
 export const fetchAsyncMovies = createAsyncThunk(
   'movies/fetchAsyncMovies',
   async () => {
-    const movieText = 'Harry'
+    const movieText = 'Time'
     const response = await movieApi.get(
       `?apiKey=${APIKey}&s=${movieText}&type=movie`
     )
@@ -68,6 +68,7 @@ const movieSlice = createSlice({
   }
 })
 
+//Exportando os estados salvos nas variáveis para serem usadas nos hooks
 export const { removeSelectedItem } = movieSlice.actions
 export const getAllMovies = state => state.movies.movies
 export const getAllShows = state => state.movies.shows
