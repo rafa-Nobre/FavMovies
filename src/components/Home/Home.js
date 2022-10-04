@@ -9,10 +9,11 @@ import {
 
 const Home = () => {
   const dispatch = useDispatch()
-
+  const movieText = 'Time'
+  const showText = 'Friends'
   useEffect(() => {
-    dispatch(fetchAsyncMovies())
-    dispatch(fetchAsyncShows())
+    dispatch(fetchAsyncMovies(movieText))
+    dispatch(fetchAsyncShows(showText))
   }, [dispatch])
 
   return (

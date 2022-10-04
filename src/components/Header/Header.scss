@@ -1,14 +1,4 @@
-//@import '../../common/colors.scss'
-
-/* @mixin color-pallet {
-  $primary-color:#0f171e;
-  $secondary-color:#1a242f;
-  $font-primary: #ffffff;
-  $font-secondary: #79b8f3;
-} */
-
 .header {
-  //@include color-pallet;
   background-color: #1a242f;
   height: 72px;
   padding: 0px 40px;
@@ -19,7 +9,7 @@
 
 .logo {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -29,5 +19,27 @@
   height: 38px;
 }
 
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 
-
+  form {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    button {
+      padding: 8px;
+      font-size: 20px;
+      cursor: pointer;
+      height: 35px;
+    }
+  }
+  input {
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    height: 35px;
+    outline: none;
+  }
+}
