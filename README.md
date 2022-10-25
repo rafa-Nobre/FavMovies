@@ -6,5 +6,5 @@ A API de onde está sendo feito os request de dados é [https://www.omdbapi.com/
 
 ## Para rodar a aplicação
 
-No terminal digite o comando `npm start` e a aplicação será iniciada no modo de desenvolvimento.
+No terminal digite o comando `npm install` para instalar as dependências e bibliotecas necessárias. Logo após, insira `npm start` e a aplicação será iniciada no seu browser.
 Caso não abra automaticamente, entre em [http://localhost:3000] para vizualizar!
